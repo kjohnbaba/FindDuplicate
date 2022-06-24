@@ -14,21 +14,14 @@
 public class FindDuplicate {
 
     public static void main(String[] args) {
-
-
 	int[] a = new int[args.length];
-	
 		for (int i=0; i<args.length; i++) {
-			a[i]=Integer.parseInt(args[i]);			
-			// System.out.println(args[i] + a[i]);
+			a[i]=Integer.parseInt(args[i]);				
 		}
 		
 		boolean flag = false;
-
 		for (int j=0; j<args.length-1;j++){
-
 			for (int i=j+1; i<args.length; i++) {
-				
 			if(a[i]==a[j]){
 				flag = true;
 				break;
